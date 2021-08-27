@@ -1,0 +1,48 @@
+{
+  "name": "nodejs-typescript-backend",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "nodemon --config nodemon.json src/app.ts",
+    "dev:debug": "nodemon --config nodemon.json --inspect-brk src/app.ts",
+    "start": "pm2 start ./pm2.json",
+    "reload": "pm2 reload ./pm2.json",
+    "quick-prettier": "pretty-quick --staged",
+    "full-prettier": "prettier --config ./.prettierrc.js --write \"src/**/*.{js,json,ts}\"",
+    "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "alipay-sdk": "^3.1.6",
+    "axios": "^0.17.1",
+    "axios-https-proxy-fix": "^0.17.1",
+    "body-parser": "~1.18.2",
+    "cookie": "^0.3.1",
+    "cookie-parser": "~1.4.3",
+    "crypto-js": "^3.1.9-1",
+    "express": "~4.15.5",
+    "global": "^4.4.0",
+    "lodash": "^4.17.5",
+    "log4js": "^2.5.3",
+    "module-alias": "^2.2.2",
+    "moment": "^2.29.1",
+    "mysql": "^2.18.1",
+    "node-schedule": "^2.0.0",
+    "orm": "^5.0.7",
+    "pm2": "^5.1.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.34"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.12",
+    "@types/node": "^16.0.0",
+    "nodemon": "^2.0.9",
+    "ts-node": "^10.0.0",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.3.5"
+  },
+  "_moduleAliases": {
+    "@": "./src",
+    "@util": "./src/util",
+    "@entity": "./src/entity"
+  }
+}

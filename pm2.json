@@ -1,0 +1,18 @@
+{
+  "apps": [
+    {
+      "name": "nodejs-typescript-backend",
+      "script": "src/app.ts",
+      "instances": 1,
+      "exec_mode": "cluster",
+      "exec_interpreter": "ts-node",
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "out_file": "log/pm2/node.log",
+      "error_file": "log/pm2/err.log",
+      "autorestart": false,
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}

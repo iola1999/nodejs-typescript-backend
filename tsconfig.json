@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "commonjs",
+    "target": "es2015",
+    "noImplicitAny": false,
+    "sourceMap": false,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "outDir": "./build",
+    "jsx": "react",
+    "typeRoots": [
+      "node_modules/@types",
+      "typings"
+    ],
+    "paths": {
+      "*": [
+        "*",
+        "fe/src/*"
+      ],
+      "@/*": [
+        "./src/*"
+      ],
+      "@util/*": [
+        "src/util/*"
+      ],
+      "@entity/*": [
+        "src/entity/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

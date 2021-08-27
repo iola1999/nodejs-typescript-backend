@@ -1,0 +1,6 @@
+# Project exclude paths
+/node_modules/
+/.idea/
+/log/
+/src/config/payment/
+ormconfig.json

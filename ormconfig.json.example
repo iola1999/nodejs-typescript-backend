@@ -1,0 +1,13 @@
+{
+  "name": "nodejs_backend",
+  "type": "mysql",
+  "host": "example.cn",
+  "port": 3306,
+  "username": "username_example",
+  "password": "password_example",
+  "database": "datebase_name_example",
+  "entities": [
+    "src/entity/*.entity{.ts,.js}"
+  ],
+  "logging": true
+}
