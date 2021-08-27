@@ -46,3 +46,7 @@ Windows 下：
 ```bash
 ./ding -config ./ding.cfg -subdomain yoursubname 3333
 ```
+
+## TODO
+
+- [ ] 配置文件改为环境变量，与代码分离
